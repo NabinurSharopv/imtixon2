@@ -26,7 +26,7 @@ if (shop) {
 
 function addUIData(data) {
   cards.innerHTML = "";
-  data.slice(0, data.length - 1).forEach((element, index) => {
+  data.slice(0, 30).forEach((element, index) => {
     const product = element.product;
     if (!product) return;
     const div = document.createElement("div");
