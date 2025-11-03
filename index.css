@@ -25,7 +25,7 @@ header{
     font-size: 20px;
 }
 .cards{
-    width: 100%;
+    max-width: 90%;
    display: flex;
    margin: auto;
    align-items: center;
@@ -37,9 +37,7 @@ header{
   width: 100%;
   height: 260px;
 }
-.card h2{
-    font-size: 16px;
-} 
+
 .card .price{
    padding: 10px  0px;
    font-weight: 600;
@@ -149,16 +147,16 @@ a{
   
 
 
-
+  
 
 
   
   .slider {
     position: relative;
-    max-width: 1320px;
-    height: 434px;
+    max-width: 1220px;
+    height: 387px;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 3px;
     margin: auto;
     margin-top: 19px;
   }
@@ -264,16 +262,23 @@ a{
     width: 30px;
     height: 30px;
 }
-.card{
-    width: 235px;
-height: 432px;
-border-radius: 3px;
-opacity: 1;
-padding: 9px;
-background: rgba(255, 255, 255, 1);
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-transition: all 0.3s ease;
+.card {
+  width: 235px;
+  height: 432px;
+  border-radius: 3px;
+  opacity: 1;
+  padding: 9px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
+
+/* Yumshoq hover effekti */
+.card:hover {
+  transform: translateY(-5px) scale(1.03); /* Biroz ko‘tariladi va kattalashadi */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Soyani biroz kuchaytiradi */
+}
+
 .sum-savat{
     display: flex;
     align-items: center;
@@ -287,12 +292,7 @@ transition: all 0.3s ease;
     margin-left: 200px;
 }
 .card_title .h2{
-    width: 251px;
-height: 37px;
-opacity: 1;
-top: 1px;
-font-weight: 400;
-font-style: Regular;
+    width: 231px;
 font-size: 15.88px;
 line-height: 20px;
 letter-spacing: 0%;
@@ -305,4 +305,23 @@ opacity: 1;
 top: 349px;
 left: 16px;
 
+}
+
+
+.card_img img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.add-to-cart {
+  width: 35px !important;
+  height: 35px !important;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.add-to-cart:hover {
+  transform: scale(1.1);
 }
